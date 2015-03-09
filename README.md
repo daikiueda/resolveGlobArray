@@ -1,2 +1,2 @@
-# resolveGlobArray
+# resolveGlobArray [![Build Status](https://travis-ci.org/daikiueda/resolveGlobArray.svg)](https://travis-ci.org/daikiueda/resolveGlobArray) [![Coverage Status](https://coveralls.io/repos/daikiueda/resolveGlobArray/badge.svg)](https://coveralls.io/r/daikiueda/resolveGlobArray) [![Code Climate](https://codeclimate.com/github/daikiueda/resolveGlobArray/badges/gpa.svg)](https://codeclimate.com/github/daikiueda/resolveGlobArray)
 resolve glob array.

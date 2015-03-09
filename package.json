@@ -1,0 +1,36 @@
+{
+  "name": "resolveGlobArray",
+  "version": "0.0.0",
+  "description": "resolve glob array.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha -R spec",
+    "test-cov": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://daikiueda@github.com/daikiueda/resolveGlobArray.git"
+  },
+  "keywords": [
+    "glob"
+  ],
+  "author": "daikiueda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daikiueda/resolveGlobArray/issues"
+  },
+  "homepage": "https://github.com/daikiueda/resolveGlobArray",
+  "devDependencies": {
+    "chai": "^2.1.1",
+    "codeclimate-test-reporter": "0.0.4",
+    "coveralls": "^2.11.2",
+    "istanbul": "^0.3.7",
+    "mocha": "^2.2.1",
+    "sinon": "^1.13.0"
+  },
+  "dependencies": {
+    "glob": "^5.0.1",
+    "lodash": "^3.5.0",
+    "q": "^1.2.0"
+  }
+}
