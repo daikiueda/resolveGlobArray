@@ -1,0 +1,2 @@
+# resolveGlobArray
+resolve glob array.
