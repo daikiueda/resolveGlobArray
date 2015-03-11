@@ -5,6 +5,12 @@ var expect = require( "chai" ).expect,
 
 describe( "resolveGlobArray( patterns, [options], [callback] )", function(){
 
+    var fixturePath = ".tmp/fixture";
+
+    before( function( done ){
+        setupFixture( fixturePath, done );
+    } );
+
     describe( "Arguments", function(){
 
         it( "resolveGlobArray( patterns )" );
@@ -54,3 +60,24 @@ describe( "resolveGlobArray( patterns, [options], [callback] )", function(){
         } );
     } );
 } );
+
+
+function setupFixture( fixturePath, done ){
+
+    var fs = require( "fs" ),
+        path = require( "path" );
+
+    fs.stat( fixturePath, function( err, stats ){
+
+        if( err && err.code == "ENOENT" ){
+            fixturePath.split( path.sep ).reduce( function( parentPath, currentPath ){
+                var targetPath = path.resolve( parentPath, currentPath );
+                fs.mkdirSync( targetPath );
+                return targetPath;
+            }, "" );
+            require( "./test_utils/buildMeaninglessDirectoryStructure.js" )( fixturePath, 2, 3, 2 );
+        }
+
+        done();
+    } );
+}
