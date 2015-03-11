@@ -39,7 +39,7 @@ function buildMeaninglessDirectoryStructure( targetRootDir, dirBandLimit, dirLev
     buildOneDirectory = function( targetDir, level ){
         for( var files = fileCount; files; files-- ){
             var filePath = path.join( targetDir, [ getNameStr( fileCount - files + 1 ), getExtensionStr() ].join( "." ) );
-            fs.writeFileSync( filePath, dirPath );
+            fs.writeFileSync( filePath, filePath );
         }
 
         if( level <= dirLevelLimit ){

@@ -4,3 +4,5 @@
     node: true
     amd: false
     mocha: true
+  rules:
+    quotes: [1, "double", "avoid-escape"]
