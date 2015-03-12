@@ -159,7 +159,7 @@ function setupFixture( fixturePath, done ){
                 fs.mkdirSync( targetPath );
                 return targetPath;
             }, "" );
-            require( "./test_utils/buildMeaninglessDirectoryStructure.js" )( fixturePath, 2, 3, 2 );
+            require( "meaninglessdirtree" )( fixturePath, 2, 3, 2 );
         }
 
         done();
